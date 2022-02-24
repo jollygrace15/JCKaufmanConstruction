@@ -23,8 +23,15 @@ app.use(
   })
 );
 
+
+// import in routes
+const landingRoutes = require('./routes/landing.js');
+
 async function main() {
-  
+  //app.get('/', (req,res)=>{
+      //res.send("It's alive!")
+  //})
+  app.use('/', landingRoutes);
 }
 
 main();
