@@ -34,6 +34,8 @@ async function main() {
   app.use('/', landingRoutes);
 }
 
+
+
 main();
 
 app.listen(3000, () => {
