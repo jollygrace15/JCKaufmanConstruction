@@ -1,7 +1,9 @@
+To create user:
 CREATE USER 'jolly'@'%' IDENTIFIED WITH mysql_native_password BY 'bar';
 grant all privileges on *.* to 'jolly'@'%';
 FLUSH PRIVILEGES;
 
+https://jollygrace15-jckaufmanco-ka7gf516kl9.ws-us33.gitpod.io/
 
 The last update to this file was: **July 2, 2021**
 

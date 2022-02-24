@@ -13,18 +13,25 @@ exports.setup = function(options, seedLink) {
   type = dbm.dataType;
   seed = seedLink;
 };
+
 exports.up = function(db) {
+  //first argument: name of the table
+  //second argument: an object representing the columns
+
+  //Create Table using Javascript instead of Mysql syntax
   return db.createTable('services',{
-      id: { type: 'int', primaryKey:true, autoIncrement:true, unsigned: true},
-      name: { type: 'string', length:100, notNull:false},
-      cost: 'int',
-      description:'text'
+    "id": { "type": 'int', "primaryKey":true, "autoIncrement":true, "unsigned": true},
+    "name": { "type": 'string', "length":100, "notNull":true},
+    "min-rate": 'int',
+    "max-rate": 'int',
+    "description":'text',
   })
 };
 
 exports.down = function(db) {
   return db.dropTable('services');
 };
+
 
 exports._meta = {
   "version": 1
