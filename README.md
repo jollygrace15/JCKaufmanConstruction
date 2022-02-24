@@ -1,8 +1,9 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+CREATE USER 'jolly'@'%' IDENTIFIED WITH mysql_native_password BY 'bar';
+grant all privileges on *.* to 'jolly'@'%';
+FLUSH PRIVILEGES;
 
-Welcome jollygrace15,
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. The last update to this file was: **July 2, 2021**
+The last update to this file was: **July 2, 2021**
 
 ## Gitpod Reminders
 
