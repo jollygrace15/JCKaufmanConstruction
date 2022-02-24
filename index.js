@@ -26,12 +26,14 @@ app.use(
 
 // import in routes
 const landingRoutes = require('./routes/landing.js');
+const serviceRoutes = require('./routes/services.js')
 
 async function main() {
   //app.get('/', (req,res)=>{
       //res.send("It's alive!")
   //})
   app.use('/', landingRoutes);
+  app.use('/services', serviceRoutes);
 }
 
 

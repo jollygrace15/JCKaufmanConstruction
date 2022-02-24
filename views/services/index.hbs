@@ -1,0 +1,39 @@
+{{#extends 'base'}}
+
+{{#block 'content'}}
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Min-Rate</th>
+            <th>Max-Rate</th>
+            <th>Description</th>
+        </tr>
+
+    </thead>
+    <tbody>
+        {{#each services}}
+            <tr>
+                <td>
+                    {{this.id}}
+                </td>
+                <td>
+                    {{this.name}}
+                </td>
+                <td>
+                    {{this.min-rate}}
+                </td>
+                 <td>
+                    {{this.max-rate}}
+                </td>
+                <td>
+                    {{this.description}}
+                </td>
+            </tr>
+        {{/each}}
+    </tbody>
+</table>
+{{/block}}
+
+{{/extends}}
