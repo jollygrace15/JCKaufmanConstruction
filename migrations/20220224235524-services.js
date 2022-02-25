@@ -22,9 +22,9 @@ exports.up = function(db) {
   return db.createTable('services',{
     "id": { "type": 'int', "primaryKey":true, "autoIncrement":true, "unsigned": true},
     "name": { "type": 'string', "length":100, "notNull":true},
-    "min-rate": 'int',
-    "max-rate": 'int',
-    "description":'text',
+    "minrate": 'int',
+    "maxrate": 'int',
+    "description":{ "type": 'string', "length":100}
   })
 };
 

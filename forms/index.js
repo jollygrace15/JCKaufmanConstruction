@@ -25,7 +25,7 @@ var bootstrapField = function (name, object) {
 };
 
 
-const createProductForm = () => {
+const createServiceForm = () => {
     return forms.create({
         'name': fields.string({
             required: true,
@@ -34,14 +34,14 @@ const createProductForm = () => {
                 label: ['form-label']
             }
         }),
-        'min-rate': fields.string({
+        'minrate': fields.string({
             required: true,
             errorAfterField: true,
             cssClasses: {
                 label: ['form-label']
             }
         }),
-        'max-rate': fields.string({
+        'maxrate': fields.string({
             required: true,
             errorAfterField: true,
             cssClasses: {
@@ -58,5 +58,5 @@ const createProductForm = () => {
     })
 };
 
-module.exports = { createProductForm, bootstrapField };
+module.exports = { createServiceForm, bootstrapField };
 
